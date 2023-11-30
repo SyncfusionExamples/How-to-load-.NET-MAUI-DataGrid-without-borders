@@ -7,24 +7,24 @@ The following code illustrates how to load the grid without borders.
  ```XML
 <ContentPage.BindingContext>
         <local:EmployeeViewModel x:Name="viewModel" />
-    </ContentPage.BindingContext>
+</ContentPage.BindingContext>
 
-    <syncfusion:SfDataGrid ColumnWidthMode="Auto"
-                           HeaderGridLinesVisibility="None"
-                           GridLinesVisibility="None"
-                           ItemsSource="{Binding Employees}">
-        <syncfusion:SfDataGrid.Columns>
-            <syncfusion:DataGridTextColumn MappingName="EmployeeID"
-                                           HeaderText="Employee ID">
-            </syncfusion:DataGridTextColumn>
-            <syncfusion:DataGridTextColumn MappingName="Name"
-                                           HeaderText="Name">
-            </syncfusion:DataGridTextColumn>
-            <syncfusion:DataGridTextColumn MappingName="IDNumber"
-                                           HeaderText="ID Number">
-            </syncfusion:DataGridTextColumn>
-        </syncfusion:SfDataGrid.Columns>
-    </syncfusion:SfDataGrid>
+<syncfusion:SfDataGrid ColumnWidthMode="Auto"
+                        HeaderGridLinesVisibility="None"
+                        GridLinesVisibility="None"
+                        ItemsSource="{Binding Employees}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:DataGridTextColumn MappingName="EmployeeID"
+                                        HeaderText="Employee ID">
+        </syncfusion:DataGridTextColumn>
+        <syncfusion:DataGridTextColumn MappingName="Name"
+                                        HeaderText="Name">
+        </syncfusion:DataGridTextColumn>
+        <syncfusion:DataGridTextColumn MappingName="IDNumber"
+                                        HeaderText="ID Number">
+        </syncfusion:DataGridTextColumn>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
  ```
  
 
