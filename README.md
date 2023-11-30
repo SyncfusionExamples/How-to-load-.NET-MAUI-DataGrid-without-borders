@@ -5,20 +5,26 @@ The following code illustrates how to load the grid without borders.
 
  ##### XAML
  ```XML
-<contentpage.bindingcontext>
-        <local:employeeviewmodel x:name="viewModel">
-</local:employeeviewmodel></contentpage.bindingcontext>
+<ContentPage.BindingContext>
+        <local:EmployeeViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
 
-<syncfusion:sfdatagrid x:name="dataGrid" columnwidthmode="Auto" headergridlinesvisibility="None" gridlinesvisibility="None" itemssource="{Binding Employees}">
-    <syncfusion:sfdatagrid.columns>
-        <syncfusion:datagridtextcolumn mappingname="EmployeeID" headertext="Employee ID">
-        </syncfusion:datagridtextcolumn>
-        <syncfusion:datagridtextcolumn mappingname="Name" headertext="Name">
-        </syncfusion:datagridtextcolumn>
-        <syncfusion:datagridtextcolumn mappingname="IDNumber" headertext="ID Number">
-        </syncfusion:datagridtextcolumn>
-    </syncfusion:sfdatagrid.columns>
-</syncfusion:sfdatagrid>
+    <syncfusion:SfDataGrid ColumnWidthMode="Auto"
+                           HeaderGridLinesVisibility="None"
+                           GridLinesVisibility="None"
+                           ItemsSource="{Binding Employees}">
+        <syncfusion:SfDataGrid.Columns>
+            <syncfusion:DataGridTextColumn MappingName="EmployeeID"
+                                           HeaderText="Employee ID">
+            </syncfusion:DataGridTextColumn>
+            <syncfusion:DataGridTextColumn MappingName="Name"
+                                           HeaderText="Name">
+            </syncfusion:DataGridTextColumn>
+            <syncfusion:DataGridTextColumn MappingName="IDNumber"
+                                           HeaderText="ID Number">
+            </syncfusion:DataGridTextColumn>
+        </syncfusion:SfDataGrid.Columns>
+    </syncfusion:SfDataGrid>
  ```
  
 
